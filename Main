@@ -1342,14 +1342,14 @@ do
     
     					if BypassTP then
     						if (player.Character.HumanoidRootPart.Position - s.Position).Magnitude > 2500 then
-    							BTP(s.CFrame)
+    							BTP(s)
     							print("Tweening đến vị trí:", s.Position)
     						else
-    							Tween(s.CFrame)
+    							Tween(s)
     							print("Tweening đến vị trí:", s.Position)
     						end
     					else
-    						Tween(s.CFrame)
+    						Tween(s)
     					end
     
     					if (s.Position - player.Character.HumanoidRootPart.Position).Magnitude <= 5 then
