@@ -1339,7 +1339,7 @@ do
     				-- Kiểm tra nhiệm vụ hiện tại
     				if not string.find(questTitle, NameMon) or not questGUI.Visible then
     					game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("AbandonQuest")
-    
+                    
     					if BypassTP then
     						if (player.Character.HumanoidRootPart.Position - s.Position).Magnitude > 2500 then
     							BTP(s)
@@ -1363,7 +1363,7 @@ do
     							if enemy.Name == Ms then
     								repeat
     									wait(0.2)
-            print("Tim Thay quai: "..enemy.Name
+                                        print("Tim Thay quai: "..enemy.Name)
     									-- AttackNoCD()
     									AutoHaki()
     									EquipTool(SelectWeapon)
